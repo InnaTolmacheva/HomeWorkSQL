@@ -28,10 +28,6 @@ public class DataHelper {
         private String code;
     }
 
-    public static void getVerificationCode() {
-        return; // new VerificationCode("749289");
-    }
-
     @SneakyThrows
     public static String getCode() {
         String codeSQL = "SELECT code FROM auth_codes";
