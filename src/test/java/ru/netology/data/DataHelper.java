@@ -44,9 +44,12 @@ public class DataHelper {
     }
 
     @SneakyThrows
-    public static void cleanCode() {
+    public static void cleanDataBases() {
         var runner = new QueryRunner();
-        String cleanCodes = "DELETE FROM auth_codes;";
+        String cleanAuthCodes = "DELETE FROM auth_codes;";
+        String cleanCardTransactions = "DELETE FROM card_transactions;";
+        String cleanCards = "DELETE FROM cards;";
+        String cleanUsers = "DELETE FROM users;";
 
         try (
                 Connection conn = DriverManager.getConnection(
@@ -54,10 +57,14 @@ public class DataHelper {
                 );
         ) {
 
-            runner.update(conn, cleanCodes);
+            runner.update(conn, cleanAuthCodes);
+            runner.update(conn, cleanCardTransactions);
+            runner.update(conn, cleanCards);
+            runner.update(conn, cleanUsers);
 
         }
     }
+
 
 }
 

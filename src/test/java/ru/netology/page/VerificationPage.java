@@ -11,9 +11,8 @@ public class VerificationPage {
     private SelenideElement bottom = $x("//*[text()=\"Продолжить\"]");
 
     public DashboardPage validVerify() {
-        String getCode = new DataHelper().getCode();
-        code.setValue(getCode);
-        $x("//*[text()=\"Продолжить\"]").click();
+        code.setValue(DataHelper.getCode());
+        bottom.click();
         return new DashboardPage();
 
     }

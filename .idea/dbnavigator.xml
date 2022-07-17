@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -37,6 +37,9 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="aaa4c670-25e7-45c1-a560-ddbe876266c6" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="aaa4c670-25e7-45c1-a560-ddbe876266c6" dataset="app.auth_codes" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
